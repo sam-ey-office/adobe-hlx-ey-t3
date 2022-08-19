@@ -8,8 +8,7 @@ header nav {
   padding: 0 2rem;
   position: fixed;
   z-index: 1;
-  /* background-color: var(--background-color); */
-  background-color: #2e2e38;
+  background-color: var(--background-color);
   color: white;
   width: 100vw;
   height: var(--nav-height);
@@ -41,8 +40,18 @@ header .nav-brand {
   
 }
 
-header .nav-brand svg.icon-logo .ey-logo-yellow {
-  fill: #ffe600;
+header .nav-brand svg {
+  height: 45px;
+  transition: height 0.3s ease-out;
+}
+
+header .nav-brand svg .ey-logo-yellow {
+  fill: var(--highlight-color);
+}
+
+header .nav-brand svg polygon,
+header .nav-brand svg path {
+  fill: white;
 }
 
 header nav .nav-brand p {
@@ -143,6 +152,7 @@ header nav[aria-expanded='true'] .nav-sections {
 
 /* tools */
 header nav .nav-tools {
+  display: none;
   grid-area: tools;
   flex: 0 0 auto;
   height: 22px;
@@ -150,6 +160,17 @@ header nav .nav-tools {
 
 header nav .nav-tools p {
   margin: 0;
+  font-size: 14px;
+}
+
+header nav .nav-tools p span.icon {
+  position: relative;
+  padding: 0 30px 0 20px;
+}
+
+header nav .nav-tools p span.icon svg {
+  position: absolute;
+  top: -2px;
 }
 
 header nav[aria-expanded='true'] .nav-tools img {
@@ -173,25 +194,7 @@ header nav[aria-expanded='true'] .nav-tools li {
     display: flex;
     justify-content: space-between;
     height: var(--nav-height);
-    padding: 16px 2rem;
-  }
-
-  header nav .nav-sections > ul > li.nav-drop {
-    position: relative;
-    padding-right: 32px;
-  }
-
-  header nav .nav-drop::after {
-    content: ' ';
-    border: 1px solid currentolor;
-    transform: rotate(135deg);
-    border-width: 2px 2px 0 0;
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    top: 8px;
-    right: 14px;
+    padding: 0 2rem;
   }
 
   header nav .nav-hamburger {
@@ -206,9 +209,14 @@ header nav[aria-expanded='true'] .nav-tools li {
     flex: 0 0 150px;
   }
 
+  header nav .nav-brand svg {
+    height: 55px;
+  }
+
   header nav .nav-sections ul {
     display: flex;
     flex-direction: row;
+    gap: 32px;
     background-color: unset;
     width: unset;
     margin: 0;
@@ -220,12 +228,16 @@ header nav[aria-expanded='true'] .nav-tools li {
   }
 
   header nav .nav-sections > ul > li {
-    padding: 0 16px;
+    padding: 0;
     position: relative;
-    font-size: 16px;
+    height: var(--nav-height);
+    font-size: 14px;
     margin: 0;
     cursor: pointer;
     padding-top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px transparent;
   }
 
   header nav .nav-sections > ul > li > p {
@@ -254,10 +266,13 @@ header nav[aria-expanded='true'] .nav-tools li {
     left: 20px;
   }
 
-
   header nav .nav-sections > ul > li > ul > li {
     font-size: 18px;
     padding: 8px 16px;
+  }
+
+  header nav .nav-sections > ul > li:hover {
+    border-bottom-color: var(--highlight-color);
   }
 
   header nav .nav-sections > ul > li[aria-expanded='true'] ul {
@@ -268,5 +283,9 @@ header nav[aria-expanded='true'] .nav-tools li {
     left: 0;
     padding: 16px;
     box-shadow: 0 0 5px var(text-color);
+  }
+
+  header nav .nav-tools  {
+    display: block;
   }
 }
