@@ -8,7 +8,9 @@ header nav {
   padding: 0 2rem;
   position: fixed;
   z-index: 1;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-color: #2e2e38;
+  color: white;
   width: 100vw;
   height: var(--nav-height);
   box-sizing: border-box;
@@ -17,6 +19,10 @@ header nav {
 
 header nav a:any-link {
   color: currentcolor;
+}
+
+header nav a:hover {
+  border-bottom: 3px solid yellow;
 }
 
 header nav[aria-expanded='true'] {
@@ -32,6 +38,11 @@ header .nav-brand {
   font-size: 22px;
   font-weight: 700;
   line-height: 1em;
+  
+}
+
+header .nav-brand svg.icon-logo .ey-logo-yellow {
+  fill: #ffe600;
 }
 
 header nav .nav-brand p {
@@ -148,10 +159,12 @@ header nav[aria-expanded='true'] .nav-tools img {
 header nav[aria-expanded='true'] .nav-tools ul {
   font-size: unset;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header nav[aria-expanded='true'] .nav-tools li {
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* desktop nav styles */
