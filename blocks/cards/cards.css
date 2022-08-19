@@ -1,6 +1,6 @@
 .cards > ul {
     list-style: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -9,12 +9,18 @@
 
 .cards > ul > li {
     border: 1px solid var(--highlight-background-color);
-    background-color: var(--background-color)
+    background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
     margin: 16px;
+    border: 1in;
 }
+
+
+/* .cards.large > ul > li {
+    border: solid 2px red;
+} */
 
 .cards .cards-card-image {
     line-height: 0;
@@ -26,6 +32,13 @@
 
 .cards > ul > li img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 5 / 7;
     object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.cards:hover > ul > li img {
+    transform: scale(1.02,1.02);
+    cursor: pointer;
+    overflow: hidden;
 }
