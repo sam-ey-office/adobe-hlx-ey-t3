@@ -2,66 +2,47 @@
 
 main .hero-container > div {
     max-width: unset;
-    margin: 0;
     background-image: linear-gradient(to bottom, transparent, #2e2e38);
 }
   
 main .hero-container {
     padding: 0;
-    margin-bottom: -300px;
-    background-image: linear-gradient(to bottom, transparent, #2e2e38);
 }
   
 main .hero {
     position: relative;
-    padding: 60px;
-    /* min-height: 300px; */
-    width: 100vw;
-    height: 120vh;
-    display: flex;
-    margin-top: -300px;
-    margin-left: -100px;
-    margin-bottom: -100px;
-    /* background-image: linear-gradient(to bottom, transparent, #2e2e38); */
+    padding: 90px;
+    min-height: 300px;
 }
 
-main .hero h1 {
-    position: absolute;
-    max-width: 100%;
-    padding: 20px;
-    padding-top: 540px;
-    margin-left: 80px;
-    /*margin-right: auto;*/
+main .hero h5 {
+    max-width: 1200px;
+    margin-left: -20px;
+    margin-right: auto;
     text-align: left;
     color: yellow;
+    padding-top: 190px;
     font-size: 1em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-main .hero h2 {
-    position: absolute;
-    max-width: 100%;
-    text-align: left;
-    color: white;
-    padding: 20px;
-    padding-top: 570px;
-    margin-left: 80px;
-    font-size: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main .hero h3 {
-    position: absolute;
-    max-width: 100%;
+    max-width: 1200px;
+    margin-left: -20px;
+    margin-right: auto;
     text-align: left;
     color: white;
-    padding: 10px;
-    /*padding-top: 570px;*/
-    margin-top: 700px;
-    margin-left: 100px;
-    font-size: 0.75em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+
+main .hero h4 {
+    max-width: 1200px;
+    margin-left: -20px;
+    margin-right: auto;
+    text-align: left;
+    color: white;
     border-left: 3px solid #ffe600;
+    padding: 10px;
+    font-size: 0.75em;
 }
 
 main .hero picture {
@@ -73,7 +54,7 @@ main .hero picture {
     right: 0;
     object-fit: cover;
     box-sizing: border-box;
-    filter: brightness(150%);
+    filter: brightness(100%);
 }
 
 main .hero img {

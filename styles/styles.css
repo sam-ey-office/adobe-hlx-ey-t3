@@ -221,10 +221,17 @@ main img {
     --heading-font-size-xs: 22px;  
   }
   
+  .section > div.cards-wrapper {
+    max-width: unset;
+    margin-left: 0;
+    margin-right: 36px;
+  }
+
   .section > div {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
   }
+
 }
 
 /* progressive section appearance */
@@ -235,4 +242,9 @@ main .section[data-section-status='initialized'] {
 
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .default-content-wrapper {
+  margin-left: 35px;
+  font-size: xx-large;
 }

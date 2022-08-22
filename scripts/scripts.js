@@ -605,14 +605,14 @@ window.addEventListener('error', (event) => {
 loadPage(document);
 
 function buildHeroBlock(main) {
-  const h1 = main.querySelector('h1');
-  const h2 = main.querySelector('h2');
+  const h5 = main.querySelector('h5');
   const h3 = main.querySelector('h3');
+  const h4 = main.querySelector('h4');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
-  if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
+  if (h5 && picture && (h5.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
     const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [picture, h1, h2, h3] }));
+    section.append(buildBlock('hero', { elems: [picture, h5, h3, h4] }));
     main.prepend(section);
   }
 }
