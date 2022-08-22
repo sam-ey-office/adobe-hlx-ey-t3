@@ -1,29 +1,44 @@
+.cards {
+    position: relative;
+}
+
 .cards > ul {
     list-style: none;
-    margin: auto;
-    padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 12px;
+    object-fit: cover;
+    padding-inline-start: 12px;
+    padding-inline-end: 0;
 }
+
 
 .cards > ul > li {
     border: 1px solid var(--highlight-background-color);
     background-color: var(--background-color);
+    margin: 0;
 }
 
 .cards .cards-card-body {
     margin: 16px;
     border: 1in;
+    text-align: left;
+    z-index: 10;
+    font-size: 15px;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: -6.5rem ;
 }
 
 
-/* .cards.large > ul > li {
-    border: solid 2px red;
-} */
-
 .cards .cards-card-image {
+    overflow: hidden;
     line-height: 0;
+    opacity: 1;
+    transition: opacity 1s;  
+    width: 100%; 
 }
 
 .cards .cards-card-body > *:first-child {
@@ -31,14 +46,25 @@
 }
 
 .cards > ul > li img {
+    display: inline-block;
+    text-align: center;
     width: 100%;
     aspect-ratio: 5 / 7;
-    object-fit: cover;
-    transition: all 0.4s ease;
+    height: auto; 
+    transform: scale(1);
 }
 
-.cards:hover > ul > li img {
-    transform: scale(1.02,1.02);
+.cards > ul > li img:hover {
+    transition: 0.4s ease-in-out;
+    transform: scale(1.02);
     cursor: pointer;
-    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+.cards.office > ul > li img:hover {
+    width: 100%;
+    transform: none;
+    transition: none;
+    cursor: default;
 }
