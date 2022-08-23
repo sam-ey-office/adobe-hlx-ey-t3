@@ -1,3 +1,4 @@
 main .section .office-map-wrapper {
   padding: 0;
+  max-width: 100%;
 }
