@@ -1,10 +1,195 @@
 .columns > div {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.columns img {
+/* Column (feature) */
+.columns.feature > div > div:first-child {
+    border-bottom: 1px solid white;
+    padding-top: 70px;
+    padding-right: 50px;
+}
+
+.columns.feature > div > div {
+    padding-left: 12px;
+}
+
+.columns.feature > div > div > p > em > a.button.secondary {
+    border: 1px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 0px;
+    font-size: 0.75em;
+    width: 360px;
+}
+
+.columns.feature > div > div > p > em > a.button.secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+.columns.feature > div > div:first-child > h3 {
+    color: yellow;
+    font-size: 1.25em;
+}
+
+.columns.feature > div > div > h3 {
+    color: yellow;
+    font-size: 1.25em;
+}
+
+/* Column (suite) */
+.columns.suite img {
     width: 100%;
+}
+
+.columns.suite > div > div > h4 {
+    color: yellow;
+    padding-left: 40px;
+    font-size: 1.2em;
+}
+
+.columns.suite > div > div:first-child {
+    padding-top: 10px;
+    padding-right: 0px;
+    border-right: none;
+}
+
+.columns.suite > div > div:last-child {
+    padding-left: 40px;
+}
+
+/* Column (discover) */
+.columns.discover > div > div:first-child {
+    text-align: left;
+    border-right: none;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.columns.discover > div > div:first-child > p > em > a.button.secondary {
+    border: 1px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 0px;
+    font-size: 0.75em;
+    width: 375px;
+    margin-top: 0px;
+    background-color: white;
+    color: black;
+}
+
+.columns.discover > div > div:first-child > p > em > a.button.secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.columns.discover > div > div:last-child > p.button-container {
+    padding-left: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 10px);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline;
+}
+
+.columns.discover > div > div:last-child > p {
+    padding-left: 10px;
+}
+
+.columns.discover > div > div:last-child > p > em > a.button.secondary {
+    border: 1px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 0.5em;
+    margin-top: 0px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px 5px 15px;
+}
+
+.columns.working {
+    background-color: var(--background-color);
+}
+
+.columns.working > div > div:first-child {
+    padding-top: 10px;
+    padding-right: 0px;
+    border-right: none;
+    padding-left: 20px;
+    order: 2;
+}
+
+.columns.working > div > div:first-child > p > em > a.button.secondary {
+    border: 1px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 0px;
+    font-size: 0.75em;
+    width: 340px;
+    margin-top: 0px;
+    background-color: var(--background-color);
+    color: white;
+}
+
+/* Columns (subscribe) */
+.columns.subscribe {
+    background-color: yellow;
+    padding-left: 30px;
+    color: black;
+}
+
+.columns.subscribe > div > div > p > em > a.button.secondary {
+    border: 1px solid black;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 0px;
+    font-size: 0.75em;
+    width: 320px;
+    margin-top: 0px;
+    background-color: yellow;
+    color: black;
+}
+
+.columns.subscribe > div > div:first-child > p > em > a.button.secondary:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Columns (law) */
+.columns.law {
+    background-color: lightgray;
+    padding-left: 30px;
+    color: black;
+    text-align: center;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: -65px;
+}
+
+.columns.law > div > div > p > em > a.button.secondary {
+    border: 1px solid black;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 0px;
+    font-size: 0.75em;
+    width: 320px;
+    margin-top: 0px;
+    background-color: lightgrey;
+    color: black;
+}
+
+.columns.law > div > div:first-child > p > em > a.button.secondary:hover {
+    background-color: black;
+    color: white;
+}
+
+.columns.collapse {
+    background-color: white;
 }
 
 @media (min-width: 900px) {
@@ -22,4 +207,62 @@
     .columns > div > div:first-of-type {
         margin-left: unset;
     }
+
+    .columns.suite img {
+        width: 80%;
+    }
+    
+    .columns.suite > div > div > h4 {
+        color: yellow;
+        padding-left: 50px;
+        font-size: 1.2em;
+    }
+
+    .columns.suite > div > div:first-child {
+        padding-top: 10px;
+        padding-left: 100px;
+        padding-right: 0px;
+        border-right: none;
+    }
+
+    .columns.suite > div > div:last-child {
+        padding-left: 0px;
+    }
+
+    /* Column (feature) */
+    .columns.feature > div > div:first-child {
+        border-right: 1px solid white;
+        border-bottom: none;
+        padding-top: 70px;
+        padding-right: 50px;
+    }
+
+    .columns.feature > div > div {
+        padding-left: 60px;
+    }
+
+    .columns.feature > div > div > p > em > a.button.secondary {
+        border: 1px solid white;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 0px;
+        font-size: 0.75em;
+        width: auto;
+    }
+
+    .columns.feature > div > div > p > em > a.button.secondary:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .columns.feature > div > div:first-child > h3 {
+        color: yellow;
+        font-size: 1.25em;
+    }
+
+    .columns.feature > div > div > h3 {
+        color: yellow;
+        font-size: 1.25em;
+    }
+    
 }
