@@ -5,7 +5,8 @@
        url("/styles/fonts/EYInterstate-Light.ttf") format("truetype"),
        url("/styles/fonts/EYInterstate-Light.svg") format("svg");
   font-weight: 300;
-  font-style: normal
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,7 +15,8 @@
        url("/styles/fonts/EYInterstate-LightItalic.ttf") format("truetype"),
        url("/styles/fonts/EYInterstate-LightItalic.svg") format("svg");
   font-weight: 300;
-  font-style: italic
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -23,7 +25,8 @@
        url("/styles/fonts/EYInterstate-Regular.ttf") format("truetype"),
        url("/styles/fonts/EYInterstate-Regular.svg") format("svg");
   font-weight: 400;
-  font-style: normal
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,7 +35,8 @@
        url("/styles/fonts/EYInterstate-Italic.ttf") format("truetype"),
        url("/styles/fonts/EYInterstate-Italic.svg") format("svg");
   font-weight: 400;
-  font-style: italic
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -41,7 +45,8 @@
        url("/styles/fonts/EYInterstate-Bold.ttf") format("truetype"),
        url("/styles/fonts/EYInterstate-Bold.svg") format("svg");
   font-weight: 700;
-  font-style: normal
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -50,5 +55,6 @@
        url("/styles/fonts/EYInterstate-BoldItalic.ttf") format("truetype"),
        url("/styles/fonts/EYInterstate-BoldItalic.svg") format("svg");
   font-weight: 700;
-  font-style: italic
+  font-style: italic;
+  font-display: swap;
 }
