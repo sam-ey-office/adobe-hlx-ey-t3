@@ -8,18 +8,23 @@
 .columns.feature > div > div:first-child {
     border-bottom: 1px solid white;
     padding-top: 70px;
-    padding-right: 50px;
+    padding-right: 0;
+}
+
+.columns.feature > div > div:first-child > p {
+    font-size: 0.75em;
+    text-align: justify;
 }
 
 .columns.feature > div > div {
-    padding-left: 12px;
+    padding-left: 0;
 }
 
 .columns.feature > div > div > p > em > a.button.secondary {
     border: 1px solid white;
-    border-radius: 0px;
+    border-radius: 0;
     font-size: 0.75em;
-    width: 360px;
+    width: 100%;
 }
 
 .columns.feature > div > div > p > em > a.button.secondary:hover {
@@ -29,12 +34,23 @@
 
 .columns.feature > div > div:first-child > h3 {
     color: yellow;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .columns.feature > div > div > h3 {
     color: yellow;
-    font-size: 1.25em;
+    font-size: 1em;
+}
+
+.columns.feature > div > div:last-child {
+    border-bottom: none;
+    padding-right: 0;
+    padding-top: 20px;
+}
+
+.columns.feature > div > div:last-child > p {
+    font-size: 0.75em;
+    text-align: justify;
 }
 
 /* Column (suite) */
@@ -42,36 +58,42 @@
     width: 100%;
 }
 
-.columns.suite > div > div > h4 {
+.columns.suite > div > div > h3 {
     color: yellow;
-    padding-left: 40px;
-    font-size: 1.2em;
+    padding-left: 5px;
+    font-size: 1em;
 }
 
 .columns.suite > div > div:first-child {
     padding-top: 10px;
-    padding-right: 0px;
+    padding-right: 0;
     border-right: none;
 }
 
 .columns.suite > div > div:last-child {
-    padding-left: 40px;
+    padding-left: 5px;
+    font-size: 0.75em;
+    text-align: justify;
 }
 
 /* Column (discover) */
 .columns.discover > div > div:first-child {
     text-align: left;
     border-right: none;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-left: 0;
+    margin-top: -50px;
+}
+
+.columns.discover > div > div:first-child > h4 {
+    font-size: 1.5em;
 }
 
 .columns.discover > div > div:first-child > p > em > a.button.secondary {
     border: 1px solid white;
-    border-radius: 0px;
-    font-size: 0.75em;
-    width: 375px;
-    margin-top: 0px;
+    border-radius: 0;
+    font-size: 0.6em;
+    width: 100%;
+    margin-top: 0;
     background-color: white;
     color: black;
 }
@@ -83,25 +105,27 @@
 
 
 .columns.discover > div > div:last-child > p.button-container {
-    padding-left: 10px;
+    padding-left: 0;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 10px);
+    margin-right: 10px;
     border-radius: 5px;
     display: inline;
 }
 
 .columns.discover > div > div:last-child > p {
-    padding-left: 10px;
+    padding-left: 0;
+    font-size: 0.75em;
 }
 
 .columns.discover > div > div:last-child > p > em > a.button.secondary {
     border: 1px solid white;
     border-radius: 5px;
-    font-size: 0.5em;
-    margin-top: 0px;
+    font-size: 0.75em;
+    margin-top: 0;
     background-color: black;
     color: white;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 10px;
 }
 
 .columns.working {
@@ -110,18 +134,29 @@
 
 .columns.working > div > div:first-child {
     padding-top: 10px;
-    padding-right: 0px;
+    padding-right: 20px;
     border-right: none;
     padding-left: 20px;
     order: 2;
 }
 
+.columns.working > div > div:first-child > h3 {
+    font-size: 1.1em;
+}
+
+.columns.working > div > div:first-child > p {
+    font-size: 0.7em;
+    text-align: justify;
+}
+
 .columns.working > div > div:first-child > p > em > a.button.secondary {
     border: 1px solid white;
-    border-radius: 0px;
-    font-size: 0.75em;
+    border-radius: 0;
+    font-size: 0.9em;
     width: 100%;
     margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: var(--background-color);
     color: white;
 }
@@ -135,7 +170,7 @@
 
 .columns.subscribe > div > div > p > em > a.button.secondary {
     border: 1px solid black;
-    border-radius: 0px;
+    border-radius: 0;
     font-size: 0.75em;
     width: 100%;
     margin-top: 0;
@@ -161,10 +196,10 @@
 
 .columns.law > div > div > p > em > a.button.secondary {
     border: 1px solid black;
-    border-radius: 0px;
+    border-radius: 0;
     font-size: 0.75em;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #f6f6fa;
     color: black;
 }
@@ -207,12 +242,12 @@
     .columns.suite > div > div:first-child {
         padding-top: 10px;
         padding-left: 100px;
-        padding-right: 0px;
+        padding-right: 0;
         border-right: none;
     }
 
     .columns.suite > div > div:last-child {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     /* Column (feature) */
