@@ -1,0 +1,42 @@
+main .case-study {
+    filter: brightness(90%);
+    position: relative;
+}
+
+main .case-study img:hover {
+    filter: brightness(60%);
+}
+
+main .case-study img {
+    object-fit: cover;
+    object-position: 80%;
+    height: 450px;
+}
+
+main .case-study > div {
+    position: relative;
+}
+
+main .case-study > div > div > p:not(:first-child) {
+    padding-left: 20px;
+    position: absolute;
+}
+
+main .case-study > div > div > p:last-child {
+    font-size: 0.6em;  
+    margin-top: -100px;
+    font-weight: bold;
+}
+
+main .case-study > div > div > p:nth-last-child(2) {
+    font-size: 1.5em;  
+    font-size: 1.25em;
+    margin-top: -340px;
+}
+
+main .case-study > div > div > p:nth-last-child(3) {
+    color: yellow;
+    margin-top: -370px;  
+    padding-left: 20px;
+    font-size: 0.6em;
+}

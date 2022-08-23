@@ -232,6 +232,15 @@ main img {
     margin: auto;
   }
 
+  main .section.case-color > div:before {
+    content: '';
+    position: absolute;
+    width: 93%;
+    height: 1px;
+    background: none;
+    top: -10px;
+  }
+
 }
 
 /* progressive section appearance */
