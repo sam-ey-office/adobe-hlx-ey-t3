@@ -290,19 +290,15 @@ main .section.backcolor .default-content-wrapper {
   color: black;
 }
 
+main .section.backcolor .default-content-wrapper > p {
+  margin-top: 30px;
+}
+
 main .section.color {
   background-color: white;
 }
 
 main .section.case-color {
+  padding-top: 0;
   position: relative;
-}
-
-main .section.case-color > div::before {
-  content: '';
-  position: absolute;
-  width: 93%;
-  height: 1px;
-  background: white;
-  top: -10px;
 }
