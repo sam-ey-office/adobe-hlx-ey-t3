@@ -245,6 +245,35 @@ main .section.highlight {
 }
 
 main .default-content-wrapper {
-  margin-left: 12px;
+  margin-left: 5px;
   font-size: xx-large;
+}
+
+main .section.align {
+  background-color: black;
+}
+
+main .section.backcolor {
+  background-color: white;
+}
+
+main .section.backcolor .default-content-wrapper {
+  color: black;
+}
+
+main .section.color {
+  background-color: white;
+}
+
+main .section.case-color {
+  position: relative;
+}
+
+main .section.case-color > div:before {
+  content: '';
+  position: absolute;
+  width: 93%;
+  height: 1px;
+  background: white;
+  top: -10px;
 }
