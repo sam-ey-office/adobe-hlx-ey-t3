@@ -252,6 +252,11 @@ main img {
     top: -10px;
   }
 
+  main .default-content-wrapper > p {
+    margin-left: -50px;
+    margin-top: -75px;
+  }
+
 }
 
 /* progressive section appearance */
@@ -267,6 +272,10 @@ main .section.highlight {
 main .default-content-wrapper {
   margin-left: 5px;
   font-size: xx-large;
+}
+
+main .default-content-wrapper > p {
+  margin-top: -75px;
 }
 
 main .section.align {
