@@ -169,7 +169,11 @@ main input:hover {
 }
 
 main .section {
-  padding: 64px 16px;
+  padding: 64px 0;
+}
+
+main .section > div {
+  padding: 0 16px;
 }
 
 main pre {
@@ -237,7 +241,7 @@ main img {
     margin: auto;
   }
 
-  main .section.case-color > div:before {
+  main .section.case-color > div::before {
     content: '';
     position: absolute;
     width: 93%;
@@ -283,7 +287,7 @@ main .section.case-color {
   position: relative;
 }
 
-main .section.case-color > div:before {
+main .section.case-color > div::before {
   content: '';
   position: absolute;
   width: 93%;
