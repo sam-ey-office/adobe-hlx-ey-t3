@@ -150,7 +150,7 @@
 
 /* Columns (law) */
 .columns.law {
-    background-color: lightgray;
+    background-color: #f6f6fa;
     padding-left: 30px;
     color: black;
     text-align: center;
@@ -165,7 +165,7 @@
     font-size: 0.75em;
     width: 100%;
     margin-top: 0px;
-    background-color: lightgrey;
+    background-color: #f6f6fa;
     color: black;
 }
 
