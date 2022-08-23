@@ -17,8 +17,6 @@
 
 .columns.feature > div > div > p > em > a.button.secondary {
     border: 1px solid white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 0px;
     font-size: 0.75em;
     width: 360px;
@@ -70,8 +68,6 @@
 
 .columns.discover > div > div:first-child > p > em > a.button.secondary {
     border: 1px solid white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 0px;
     font-size: 0.75em;
     width: 375px;
@@ -90,8 +86,6 @@
     padding-left: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 10px);
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
     display: inline;
 }
@@ -102,8 +96,6 @@
 
 .columns.discover > div > div:last-child > p > em > a.button.secondary {
     border: 1px solid white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
     font-size: 0.5em;
     margin-top: 0px;
@@ -126,12 +118,10 @@
 
 .columns.working > div > div:first-child > p > em > a.button.secondary {
     border: 1px solid white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 0px;
     font-size: 0.75em;
-    width: 340px;
-    margin-top: 0px;
+    width: 100%;
+    margin-top: 0;
     background-color: var(--background-color);
     color: white;
 }
@@ -139,18 +129,16 @@
 /* Columns (subscribe) */
 .columns.subscribe {
     background-color: yellow;
-    padding-left: 30px;
+    padding: 0 30px;
     color: black;
 }
 
 .columns.subscribe > div > div > p > em > a.button.secondary {
     border: 1px solid black;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 0px;
     font-size: 0.75em;
-    width: 320px;
-    margin-top: 0px;
+    width: 100%;
+    margin-top: 0;
     background-color: yellow;
     color: black;
 }
@@ -173,11 +161,9 @@
 
 .columns.law > div > div > p > em > a.button.secondary {
     border: 1px solid black;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 0px;
     font-size: 0.75em;
-    width: 320px;
+    width: 100%;
     margin-top: 0px;
     background-color: lightgrey;
     color: black;
@@ -243,9 +229,7 @@
 
     .columns.feature > div > div > p > em > a.button.secondary {
         border: 1px solid white;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 0px;
+        border-radius: 0;
         font-size: 0.75em;
         width: auto;
     }
@@ -264,5 +248,4 @@
         color: yellow;
         font-size: 1.25em;
     }
-    
 }

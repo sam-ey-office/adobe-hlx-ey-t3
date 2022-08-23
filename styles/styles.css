@@ -174,6 +174,8 @@ main .section {
 
 main .section > div {
   padding: 0 16px;
+  max-width: 350px;
+  margin: auto;
 }
 
 main pre {
@@ -230,13 +232,13 @@ main img {
     --heading-font-size-xs: 22px;  
   }
   
-  .section > div.cards-wrapper {
+  main .section > div.cards-wrapper {
     max-width: unset;
     margin-left: 0;
     margin-right: 36px;
   }
 
-  .section > div {
+  main .section > div {
     max-width: 1600px;
     margin: auto;
   }

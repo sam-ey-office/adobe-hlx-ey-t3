@@ -8,7 +8,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 12px;
     object-fit: cover;
-    padding-inline-start: 12px;
+    padding-inline-start: 0;
     padding-inline-end: 0;
 }
 
