@@ -15,3 +15,16 @@ main .section .expandable-wrapper .expandable > div > div {
     max-height: 40px;
     padding-right: 2%;
 }
+
+@media (min-width: 900px) {
+    main .section .expandable-wrapper {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    main .section .expandable-wrapper .expandable {
+        border-bottom: 1px solid gray;
+        border-top: none;
+        border-left: none;
+    }
+}
