@@ -274,6 +274,7 @@ main .section[data-section-status='initialized'] {
 
 main .section.highlight {
   background-color: white;
+  padding: 0;
 }
 
 main .default-content-wrapper {
