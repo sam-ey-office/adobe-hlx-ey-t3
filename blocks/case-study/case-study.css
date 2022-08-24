@@ -22,21 +22,31 @@ main .case-study > div > div > p:not(:first-child) {
     position: absolute;
 }
 
-main .case-study > div > div > p:last-child {
+main .case-study > div > div > p:last-child > em > a.button.secondary {
+    margin-top: -50px;
+    margin-left: 20px;
+    border: 1px solid white;
+    border-radius: 0;
+    font-size: 0.75em;
+    width: 100%;
+}
+
+main .case-study > div > div > p:nth-last-child(2) {
     font-size: 0.6em;  
     margin-top: -100px;
     font-weight: bold;
 }
 
-main .case-study > div > div > p:nth-last-child(2) {
+main .case-study > div > div > p:nth-last-child(3) {
     font-size: 1.5em;  
     font-size: 1.25em;
     margin-top: -340px;
 }
 
-main .case-study > div > div > p:nth-last-child(3) {
+main .case-study > div > div > p:nth-last-child(4) {
     color: yellow;
     margin-top: -370px;  
     padding-left: 20px;
     font-size: 0.6em;
+    font-weight: bold;
 }
