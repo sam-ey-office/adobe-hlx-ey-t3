@@ -218,7 +218,11 @@ main img {
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 64px 0;
+  }  
+
+  main .section > div {
+    padding: 0 32px;
   }  
 }
 
@@ -235,7 +239,6 @@ main img {
   main .section > div.cards-wrapper {
     max-width: unset;
     margin-left: 0;
-    margin-right: 36px;
   }
 
   main .section > div {
@@ -270,7 +273,7 @@ main .section[data-section-status='initialized'] {
 }
 
 main .section.highlight {
-  background-color: var(--highlight-background-color);
+  background-color: white;
 }
 
 main .default-content-wrapper {
@@ -284,10 +287,6 @@ main .default-content-wrapper > p {
 
 main .section.align {
   background-color: black;
-}
-
-main .section.backcolor {
-  background-color: white;
 }
 
 main .section.backcolor .default-content-wrapper {
@@ -307,12 +306,8 @@ main .section.case-color {
   position: relative;
 }
 
-main .section.highlight {
-  background-color: white;
-  padding: 0;
-}
-
 main .section.backcolor {
+  background-color: white;
   padding-bottom: 0;
   padding-top: 20px;
 }
