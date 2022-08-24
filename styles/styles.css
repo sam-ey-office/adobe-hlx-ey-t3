@@ -309,5 +309,6 @@ main .section.highlight {
 }
 
 main .section.backcolor {
-  padding: 0;
+  padding-bottom: 0;
+  padding-top: 20px;
 }
