@@ -68,3 +68,48 @@
     transition: none;
     cursor: default;
 }
+
+main .section.backcolor .cards-wrapper {
+    padding: 0;
+    max-width: 100%;
+}
+
+main .section.backcolor .cards-wrapper .cards > ul {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-image > picture img {
+    max-height: 500px;
+    position: relative;
+}
+
+main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body {
+    padding-left: 10px;
+    position: absolute;
+    color: white;
+    margin-top: -450px;
+}
+
+main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:first-child {
+    color: white;
+    font-size: 2.5em; 
+}
+
+main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:nth-last-child(3) {
+    color: white;
+    margin-top: 250px;   
+    padding-left: 0;
+    font-size: 1em; 
+}
+
+main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:nth-last-child(2) {
+    color: white; 
+    font-size: 1em; 
+}
+
+main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:last-child {
+    color: white;
+    font-size: 1em; 
+}

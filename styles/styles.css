@@ -302,3 +302,12 @@ main .section.case-color {
   padding-top: 0;
   position: relative;
 }
+
+main .section.highlight {
+  background-color: white;
+  padding: 0;
+}
+
+main .section.backcolor {
+  padding: 0;
+}
