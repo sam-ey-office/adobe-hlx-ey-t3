@@ -57,4 +57,34 @@ main .case-study > div > div > p:nth-last-child(4) {
         object-position: unset;
         height: unset;
     }
+
+    main .case-study > div > div > p:last-child > em > a.button.secondary {
+        width: auto;
+    }
+
+    main .case-study > div > div > p:last-child > em {
+        padding-left: 600px;
+    }
+    
+    main .case-study > div > div > p:nth-last-child(2) {
+        display: none;
+    }
+    
+    main .case-study > div > div > p:nth-last-child(3) {
+        font-size: 1.5em;  
+        margin-top: -420px;
+        padding-left: 50px;
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    main .case-study > div > div > p:nth-last-child(4) {
+        color: yellow;
+        margin-top: -480px;  
+        padding-left: 50px;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
 }
