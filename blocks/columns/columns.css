@@ -242,15 +242,16 @@
         width: 80%;
     }
     
-    .columns.suite > div > div > h4 {
+    .columns.suite > div > div > h3 {
         color: yellow;
-        padding-left: 50px;
+        padding-left: 130px;
         font-size: 1.2em;
     }
 
     .columns.suite > div > div:first-child {
         padding-top: 10px;
-        padding-left: 100px;
+        margin-left: 150px;
+        margin-right: -150px;
         padding-right: 0;
         border-right: none;
     }
