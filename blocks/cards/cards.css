@@ -79,6 +79,13 @@ main .section.backcolor .cards-wrapper .cards > ul {
     margin-bottom: 0;
 }
 
+main .section.backcolor .cards-wrapper .cards > ul > li img:hover {
+    transition: none;
+    transform: none;
+    cursor: default;
+    display: block;
+    width: 100%;
+}
 
 main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-image > picture img {
     max-height: 500px;
@@ -86,7 +93,7 @@ main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-image > pict
 }
 
 main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body {
-    padding-left: 10px;
+    padding-left: 70px;
     position: absolute;
     color: white;
     margin-top: -450px;
@@ -105,11 +112,17 @@ main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:nth
 }
 
 main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:nth-last-child(2) {
-    color: white; 
+    color: white;
     font-size: 1em; 
 }
 
 main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:last-child {
     color: white;
     font-size: 1em; 
+}
+
+@media (min-width: 900px) {
+    .section.card-align .cards-wrapper {
+        padding: 40px;
+    }
 }
