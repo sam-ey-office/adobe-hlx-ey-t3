@@ -1,0 +1,17 @@
+main .section .expandable-wrapper {
+    color: black;
+    text-align: right;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+main .section .expandable-wrapper .expandable {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 3px solid #ffe600;
+}
+
+main .section .expandable-wrapper .expandable > div > div {
+    max-height: 40px;
+    padding-right: 2%;
+}
