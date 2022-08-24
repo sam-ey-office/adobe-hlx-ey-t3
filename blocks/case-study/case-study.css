@@ -3,14 +3,14 @@ main .case-study {
     position: relative;
 }
 
-main .case-study img:hover {
-    filter: brightness(60%);
-}
-
 main .case-study img {
     object-fit: cover;
     object-position: 80%;
     height: 450px;
+}
+
+main .case-study img:hover {
+    filter: brightness(60%);
 }
 
 main .case-study > div {
@@ -49,4 +49,12 @@ main .case-study > div > div > p:nth-last-child(4) {
     padding-left: 20px;
     font-size: 0.6em;
     font-weight: bold;
+}
+
+@media (min-width:900px) {
+    main .case-study img {
+        object-fit: unset;
+        object-position: unset;
+        height: unset;
+    }
 }
