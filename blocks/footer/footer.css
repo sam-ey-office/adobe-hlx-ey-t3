@@ -37,3 +37,9 @@ footer .footer > div > div > p:last-child {
   font-size: 15px;
   width: 100%;
 }
+
+@media (min-width: 900px) {
+  footer .footer {
+    margin-left: 0;
+  }
+}
