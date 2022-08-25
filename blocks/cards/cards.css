@@ -93,7 +93,7 @@ main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-image > pict
 }
 
 main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body {
-    padding-left: 70px;
+    padding-left: 20px;
     position: absolute;
     color: white;
     margin-top: -450px;
@@ -124,5 +124,9 @@ main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body > p:las
 @media (min-width: 900px) {
     .section.card-align .cards-wrapper {
         padding: 40px;
+    }
+
+    main .section.backcolor .cards-wrapper .cards > ul > li .cards-card-body {
+        padding-left: 20px;
     }
 }
