@@ -58,12 +58,16 @@ main .case-study > div > div > p:nth-last-child(4) {
         height: unset;
     }
 
-    main .case-study > div > div > p:last-child > em > a.button.secondary {
-        width: auto;
+    main .case-study > div > div > p.button-container {
+        width: 100%;
+        position: relative;
     }
 
-    main .case-study > div > div > p:last-child > em {
-        padding-left: 600px;
+    main .case-study > div > div > p:last-child > em > a.button.secondary {
+        margin-top: 0;
+        position: absolute;
+        width: auto;
+        right: 40%;
     }
     
     main .case-study > div > div > p:nth-last-child(2) {
@@ -72,7 +76,6 @@ main .case-study > div > div > p:nth-last-child(4) {
     
     main .case-study > div > div > p:nth-last-child(3) {
         font-size: 1.5em;  
-        margin-top: -420px;
         padding-left: 50px;
         clear: both;
         display: inline-block;
@@ -82,7 +85,6 @@ main .case-study > div > div > p:nth-last-child(4) {
     
     main .case-study > div > div > p:nth-last-child(4) {
         color: yellow;
-        margin-top: -480px;  
         padding-left: 50px;
         font-size: 0.8em;
         font-weight: bold;
