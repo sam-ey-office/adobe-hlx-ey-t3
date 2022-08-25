@@ -264,6 +264,9 @@ main img {
     margin-top: -75px;
   }
 
+  main .section.card-align {
+    padding-top: 120px;
+  } 
 }
 
 /* progressive section appearance */
@@ -312,3 +315,4 @@ main .section.backcolor {
   padding-bottom: 0;
   padding-top: 20px;
 }
+
