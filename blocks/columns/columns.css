@@ -218,10 +218,6 @@
     color: white;
 }
 
-.columns.collapse {
-    background-color: white;
-}
-
 @media (min-width: 900px) {
     .columns > div {
         display: flex;
@@ -241,6 +237,11 @@
     .columns.suite img {
         width: 80%;
     }
+
+    .columns.suite > div {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
     
     .columns.suite > div > div > h3 {
         color: yellow;
@@ -258,11 +259,6 @@
 
     .columns.suite > div > div:last-child {
         padding-left: 0;
-    }
-
-    .columns.suite > div {
-        border-bottom: none;
-        padding-bottom: 0;
     }
 
     /* Column (feature) */
@@ -302,5 +298,84 @@
     .columns.feature > div {
         border-bottom: none;
         border-top: none;
+    }
+
+    .columns.subscribe > div > div > p > em > a.button.secondary {
+        width: auto;
+    }
+
+    .columns.subscribe > div > div > p > em {
+       padding-left: 1200px;
+    }
+
+    .columns.law  > div > div > p {
+        width: 850px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        text-align: center;
+        padding-left: 350px;
+    }
+    
+    .columns.law > div > div > p > em > a.button.secondary {
+        width: auto;
+    }
+
+    .columns.working > div > div:first-child > p > em > a.button.secondary {
+        width: auto;
+    }
+
+    .columns.working > div > div:first-child {
+        /* padding-top: 10px; */
+        /* padding-right: 50px; */
+        border-right: none;
+        /* padding-left: 20px; */
+        order: 1;
+    }
+
+    .columns.working > div > div:first-child > p {
+        font-size: 0.7em;
+        text-align: left;
+        width: 470px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        padding-left: 50px;
+    }
+
+    .columns.working > div > div:first-child > h3 {
+        font-size: 1.1em;
+        padding-left: 50px;
+    }
+
+    .columns.working > div > div:last-child {
+        order: 2;
+    }
+
+    .columns.discover > div > div:first-child > p > em > a.button.secondary {
+        width: auto;
+    }
+
+    .columns.discover > div > div:first-child {
+        border-right: none;
+        padding-left: 120px;
+        margin-top: 0;
+    }
+
+    .columns.discover > div > div:last-child > p {
+        padding-left: 150px;
+        font-size: 0.75em;
+    }
+
+    .columns.discover > div > div:last-child {
+        padding-left: 150px;
+    }   
+
+    .columns.discover > div > div:last-child > p:nth-last-child(7) {
+        padding-left: 150px;
+    }
+
+    .columns.discover > div > div:last-child > p:nth-last-child(3) {
+        padding-left: 150px;
     }
 }
